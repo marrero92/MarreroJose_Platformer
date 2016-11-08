@@ -1,22 +1,47 @@
-.background    { background: rgb(4, 129, 248);
+.background    { /*background-image: url("assets/background2.png");*/
+                  background-color: rgb(63, 63, 63);
+			           
+              
+   				       background-size: contain;
+    			       border: 1px solid red;
                  table-layout: fixed;
                  border-spacing: 0;   }
 .background td { padding: 0;          }
-.lava          { width:16px;
-            	 height:16px;
-                 background-image:url(Lava.png); }
-.wall          { width:16px;
-            	 height:16px;
-                 background-image:url(Block1.png);   }
-.floater       { background: rgb(245, 203, 92);   }
-
+.lava          { background: rgb(3, 115 ,101); }
+.wall          { background-image: url("assets/block.png");   }
+.power {background-image:url("assets/power.gif");
+	background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
 .actor  { position: absolute;  }
-.player { background: rgb(64, 64, 64); }
-.coin   { background: rgb(241, 229, 89); }
+.coin   { background-image: url("assets/coin.gif"); 
+          background-size: 20px 20px;}
+.teleporter {
+  background-image: url("assets/teleporter.png");
+  background-size: 30px 40px;}
+.player { background: url('assets/detective.gif');
+background-position:center;
+background-repeat: no-repeat;
+background-size: 30px 40px;
+transform:scaleX(1);
 
+}
+.enemy{background-image: url("assets/harpy.gif");
+background -position: center;
+background-repeat: no-repeat;
+background-size: 40px 40px;
+}
 .game {
   overflow: hidden;
   max-width: 600px;
   max-height: 450px;
   position: relative;
+}
+
+.lost .player {
+  background-image: url("assets/detective.gif");
+}
+.won .player {
+  box-shadow: -4px -7px 8px yellow, 4px -7px 8px yellow;
+  
 }
